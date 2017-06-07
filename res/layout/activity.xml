@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <!-- 计算器的配置 -->
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:shrinkColumns="1,2,3"
+        android:stretchColumns="*" >
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_height="wrap_content"
+            android:layout_span="4"
+            android:layout_weight="0.36"
+            android:background="@null"
+            android:focusable="false"
+            android:gravity="right" >
+        </EditText>
+
+        <TableRow>
+
+            <TextView android:text="模式" />
+
+            <Switch
+                android:id="@+id/sw"
+                android:textOff="简单"
+                android:textOn="科学" />
+
+            <Space />
+
+            <Space />
+
+            <Space />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/ac"
+                android:text="C"
+                android:textColor="#EE9A00" />
+
+            <Button
+                android:id="@+id/mi"
+                android:text="^" />
+
+            <Button
+                android:id="@+id/kai"
+                android:text="√" />
+
+            <Button
+                android:id="@+id/pai"
+                android:text="π" />
+
+            <Button
+                android:id="@+id/jiecheng"
+                android:text="!" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/leftbracket"
+                android:text="(" />
+
+            <Button
+                android:id="@+id/rightbracket"
+                android:text=")" />
+
+            <Button
+                android:id="@+id/E"
+                android:text="e" />
+
+            <Button
+                android:id="@+id/del"
+                android:text="DEL"
+                />
+
+            <Button
+                android:id="@+id/sin"
+                android:text="sin" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/no7"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/no8"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/no9"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/chu"
+                android:text="÷" />
+
+            <Button
+                android:id="@+id/cos"
+                android:text="cos" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/no4"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/no5"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/no6"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/cheng"
+                android:text="×" />
+
+            <Button
+                android:id="@+id/tan"
+                android:text="tan" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/no1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/no2"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/no3"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/jian"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/ln"
+                android:text="ln" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/no0"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/dotfunc"
+                android:text="." />
+
+            <Button
+                android:id="@+id/equal"
+                android:background="#EE9A00"
+                android:text="="
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/jia"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/log"
+                android:text="log" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
